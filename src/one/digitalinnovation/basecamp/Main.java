@@ -7,22 +7,27 @@ public class Main {
 
     public static void main(String[] args) {
 
+        //Downcast com perca de informação
         byte b1;
         short s1 = 1000;
         b1 = (byte) s1;
 
+        //Upcast
         long l1;
         int i1 = 10;
         l1 = i1;
 
+        //Downcast com perca de informação
         int i2;
         long l2 = 1000000000000000000L;
         i2 = (int) l2;
 
+        //Downcast SEM perca de informação
         int i3;
         long l3 = 10000L;
         i3 = (int) l3;
 
+        //Upcast
         double d1;
         float f1 = 10.5f;
         d1 = f1;
@@ -30,10 +35,13 @@ public class Main {
         float f2;
         float f3;
         double d2 = 10000.58d;
+        //Downcast SEM perca de informação
         f2 = (float) d2;
         double d3 = 10000.588888888888888888888888888888888888888888888888888888888888888888888888888888888888d;
+        //Downcast com perca de informação
         f3 = (float) d3;
 
+        //Downcast com perca de informação - truncar, descartar casas decimais
         int i4;
         float f4 = 11.5697f;
         i4 = (int) f4;
@@ -47,6 +55,7 @@ public class Main {
         System.out.println("f3:" + f3);
         System.out.println("i4:" + i4);
 
+        //Downcast com perca de informação
         b1 = (byte) d3;
 
         System.out.println("b1:" + b1);
